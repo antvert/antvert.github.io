@@ -1,0 +1,141 @@
+html,
+body {}
+
+p {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+#welcome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #eee;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/img/fraport.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    padding: 5%;
+}
+
+#welcome,
+body>section {
+    border: 10px solid #293f86;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+}
+
+body>section:not(:target) {
+    display: none !important;
+}
+
+body>section {
+    background-size: cover;
+    background-position: center center;
+}
+
+#camera,
+#loading,
+#metrics {
+    background-image: url('/img/default.jpg');
+}
+
+#photo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+#photo>*,
+welcome>* {
+    flex: 1 1 33.333%;
+}
+
+#photo>a {
+    background-size: cover;
+    background-position: center center;
+}
+
+#photo>a:nth-child(1) {
+    background-image: url('/img/people/happy_guy.webp');
+}
+
+#photo>a:nth-child(2) {
+    background-image: url('/img/people/business_man.webp');
+}
+
+#photo>a:nth-child(3) {
+    background-image: url('/img/people/sad_child.webp');
+}
+
+#photo>a:nth-child(4) {
+    background-image: url('/img/people/happy_man.webp');
+}
+
+#photo>a:nth-child(5) {
+    background-image: url('/img/people/business_woman.webp');
+}
+
+#photo>a:nth-child(6) {
+    background-image: url('/img/people/happy_gal.webp');
+}
+
+#photo>a:nth-child(7) {
+    background-image: url('/img/people/happy_woman.webp');
+}
+
+#photo>a:nth-child(8) {
+    background-image: url('/img/people/thinking_woman.jpg');
+}
+
+#photo>a:nth-child(9) {
+    background-image: url('/img/people/sleeping_man.jpg');
+}
+
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mdl-spinner {
+    height: 56px;
+    width: 56px;
+}
+
+#metrics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#billboard {
+    background-image: url('/img/billboard.jpg');
+}
+
+#billboard img {
+    width: 1934px;
+    height: 1450px;
+    padding: 238px 418px 431px 452px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#billboard .image {
+    height: 100%;
+    width: 100%;
+    background-image: url('/img/snickers.png');
+    background-size: cover;
+    background-position: center center;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://disqus.com https://*.disqus.com https://*.disquscdn.com https://quassy.rasalhague.uberspace.de https://*.youtube.com;" />-->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <!--<meta http-equiv="X-Frame-Options" content="DENY" />-->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+
+
+    <title>
+        Test
+    </title>
+    <!-- lib -->
+    <!--<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="./lib/mdl/material.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- #TODO make it local -->
+    <!-- #TODO add integrity -->
+</head>
+
+<body>
+
+    <div id="welcome">
+        <!-- Fraport Logo -->
+    </div>
+
+    <section id="camera">
+        <button id="btn_camera" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="position:fixed;margin:0 auto;left: 0;right: 0;bottom:30%;">
+            <i class=" material-icons ">camera</i>
+        </button>
+        <div class="mdl-tooltip mdl-tooltip--large" for="btn_camera">
+            Take picture
+        </div>
+
+        <a href="#photo" id="btn_photo" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="position:fixed;margin:0 auto;left: 0;right: 0;bottom:10%;">
+            <i class="material-icons ">portrait</i>
+        </a>
+        <div class="mdl-tooltip mdl-tooltip--large" for="btn_photo">
+            Choose photo
+        </div>
+    </section>
+
+    <section id="photo">
+
+        <a href="#loading">
+
+        </a>
+        <a href="2">
+
+        </a>
+        <a href="3">
+
+        </a>
+        <a href="4">
+
+        </a>
+        <a href="5">
+
+        </a>
+        <a href="6">
+
+        </a>
+        <a href="7">
+
+        </a>
+        <a href="8">
+
+        </a>
+        <a href="9">
+
+        </a>
+    </section>
+
+    <section id="loading">
+        <!-- MDL Spinner Component with Single Color -->
+        <div>
+            <p>
+                <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+            </p>
+            <p style="font-style:italic">640K ought to be enough for anybody</p>
+            <a href="#metrics">when done</a>
+        </div>
+    </section>
+
+    <section id="metrics">
+        <div>
+            <p>gender: male</p>
+            <p>age: 31 </p>
+            <p>emotion: happy</p>
+            <p>purpose: leisure</p>
+        </div>
+        <a href="#billboard" id="btn_show" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="position:fixed;margin:0 auto;left: 0;right: 0;bottom:10%;">
+            <i class="material-icons ">visibility</i>
+        </a>
+        <div class="mdl-tooltip mdl-tooltip--large" for="btn_show">
+            Show ad
+        </div>
+    </section>
+
+    <section id="billboard">
+        <div class="image"></div>
+        <a href="#camera" id="btn_restart" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="position:fixed;margin:0 auto;left: 0;right: 0;bottom:10%;">
+            <i class="material-icons ">autorenew</i>
+        </a>
+        <div class="mdl-tooltip mdl-tooltip--large" for="btn_restart">
+            Try again
+        </div>
+        <!--<img src="/img/ads/snickers.jpg" alt="Snickers, get some nuts" /> show ad zoom out-->
+    </section>
+
+    <!-- lib -->
+    <!-- #TODO add integrity -->
+    <script src="./lib/jquery/jquery-3.4.1.min.js "></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>-->
+    <script src="./lib/mdl/material.min.js "></script>
+    <script>
+        $(window).ready(function() {
+            location.hash = "camera";
+            $("#welcome").delay(500).fadeOut(500);
+        });
+    </script>
+</body>
+
+</html>
